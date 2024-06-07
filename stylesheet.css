@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav  {
+    height: 100px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 50px;
+    background-image: url("../images/bestcat4ulogo.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border-radius: 5px;
+    background-color: grey;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 40px black;
+}
+
+.radio-knop-groep {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#radio-knop-groep-parent{
+    flex-grow: 1;
+}
+
+.radio-knop-groep label {
+    width: 50px;
+}
+
+.volgende-vorige-knop-groep {
+    display: flex;
+    flex-direction: row;
+}
+
+.volgende-vorige-knop-groep button {
+    width: 80px;
+}
+
+#imgCaption {
+    font-size: 14px;
+}
+
+#volgende-knop, #verzend-knop, button {
+    width: 150px;
+    height: 25px;
+    background-color: lightblue;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#button-volgend-foto {
+    transition: transform 10s ease;
+}
+
+#volgende-knop:hover, #verzend-knop:hover, button:hover {
+    background-color: lightgreen;
+    transform: rotateY(360deg);
+}
+
+#radio-knop-groep-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radio-knop-groep {
+    background-color: rgb(158, 156, 156);
+    margin: 1px;
+    height: 40px;
+}
+
+#errorBerichtenValidatie {
+    margin: 0px 2px;
+    text-align: center;
+    color: rgb(178, 24, 24);
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.katContainer {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.omschrijvingKat {
+    margin: 10px;
+    text-align: center;
+}
+
+.fotoKat {
+    height: 200px;
+}
+
+#vraag-tekst {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: red;
+    height: 10vh;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    width: 100%;
+    flex: 1 0 50%;
+}
+
+#div-footer-links {
+    flex: 1;
+    align-items: start;
+    padding: 0px 10px;
+
+}
+#div-footer-rechts {
+    flex: 1;
+    align-items: end;
+    padding: 0px 10px;
+
+}
+
+.profiel-foto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profiel-foto {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #000000; 
+}
+
+.over-mij-tekst {
+    margin: 20px;
+    text-align: center;
+    color: red;
+}
+@media screen and (min-width: 600px) {
+    form {
+        width: 500px;
+    }
+}

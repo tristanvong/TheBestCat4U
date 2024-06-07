@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BestCat4U</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="kat-icoon-2.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="quizKnop"><a href="index.html">QUIZ</a></li>
+                <li id="overMij"><a href="#">OVER MIJ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="mainPagina">
+       
+        <div id="template-div">
+            <form action="" id="template">
+                <div>
+                    <img src="placeholder.png" alt="avatar-placeholder-PNG" height="200px" id="image-changer"> 
+                    <br><span id="imgCaption"></span>
+                    <button id="button-volgend-foto">Toon andere</button>
+                </div>       
+                <p id="vraag-tekst"></p>
+                <br>
+
+                <!-- template voor radio buttons (invullen via JS) -->
+                <div id="radio-knop-groep-parent">
+                </div>
+
+                <!-- Vorige/ Volgende knop -->
+                <div class="volgende-vorige-knop-groep">
+                    <!-- <button id="vorige-knop">Vorige</button> -->
+                    <button id="volgende-knop">Volgende</button>
+                </div>
+
+                <!-- submit knop -->
+                <!-- <a href="resultaat.html"><button>Verzend</button></a> -->
+                <input type="submit" name="template-radio" id="verzend-knop" value="Toon resultaat">
+                <div id="errorBerichtenValidatie"></div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+    <script src="foto.js"></script>
+    <footer>
+        <div id="div-footer-links"><p>Tristan Vong - WebAdvanced</p></div>
+        <div id="div-footer-rechts"><p>&COPY;<span id="huidigJaar"></span></p></div>
+    </footer>
+</body>
+</html>
