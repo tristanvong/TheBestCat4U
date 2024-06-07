@@ -46,7 +46,8 @@ div {
     align-items: center;
 }
 
-form {
+form {    background-image: url("bestcat4ulogo.jpg");
+
     border-radius: 5px;
     background-color: grey;
     width: 80vw;
